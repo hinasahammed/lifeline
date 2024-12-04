@@ -24,8 +24,27 @@ class $AssetsImagesGen {
   AssetGenImage get lifelineLogo =>
       const AssetGenImage('assets/images/lifeline_logo.png');
 
+  /// File path: assets/images/onboard_one.png
+  AssetGenImage get onboardOne =>
+      const AssetGenImage('assets/images/onboard_one.png');
+
+  /// File path: assets/images/onboard_three.png
+  AssetGenImage get onboardThree =>
+      const AssetGenImage('assets/images/onboard_three.png');
+
+  /// File path: assets/images/onboard_two.png
+  AssetGenImage get onboardTwo =>
+      const AssetGenImage('assets/images/onboard_two.png');
+
   /// List of all assets
-  List<AssetGenImage> get values => [lgielineLogo, lifeline, lifelineLogo];
+  List<AssetGenImage> get values => [
+        lgielineLogo,
+        lifeline,
+        lifelineLogo,
+        onboardOne,
+        onboardThree,
+        onboardTwo
+      ];
 }
 
 class Assets {
