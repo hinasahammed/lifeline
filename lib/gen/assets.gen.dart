@@ -12,6 +12,26 @@ import 'package:flutter/widgets.dart';
 class $AssetsImagesGen {
   const $AssetsImagesGen();
 
+  /// File path: assets/images/blood_drop.png
+  AssetGenImage get bloodDrop =>
+      const AssetGenImage('assets/images/blood_drop.png');
+
+  /// File path: assets/images/blood_request.png
+  AssetGenImage get bloodRequest =>
+      const AssetGenImage('assets/images/blood_request.png');
+
+  /// File path: assets/images/donate_blood.png
+  AssetGenImage get donateBlood =>
+      const AssetGenImage('assets/images/donate_blood.png');
+
+  /// File path: assets/images/find_donor.png
+  AssetGenImage get findDonor =>
+      const AssetGenImage('assets/images/find_donor.png');
+
+  /// File path: assets/images/image_place_holder.png
+  AssetGenImage get imagePlaceHolder =>
+      const AssetGenImage('assets/images/image_place_holder.png');
+
   /// File path: assets/images/lgieline_logo.png
   AssetGenImage get lgielineLogo =>
       const AssetGenImage('assets/images/lgieline_logo.png');
@@ -36,14 +56,24 @@ class $AssetsImagesGen {
   AssetGenImage get onboardTwo =>
       const AssetGenImage('assets/images/onboard_two.png');
 
+  /// File path: assets/images/profile_image_placeholder.png
+  AssetGenImage get profileImagePlaceholder =>
+      const AssetGenImage('assets/images/profile_image_placeholder.png');
+
   /// List of all assets
   List<AssetGenImage> get values => [
+        bloodDrop,
+        bloodRequest,
+        donateBlood,
+        findDonor,
+        imagePlaceHolder,
         lgielineLogo,
         lifeline,
         lifelineLogo,
         onboardOne,
         onboardThree,
-        onboardTwo
+        onboardTwo,
+        profileImagePlaceholder
       ];
 }
 

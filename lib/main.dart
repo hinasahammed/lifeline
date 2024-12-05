@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:lifeline/view/authentication/phone_auth_view.dart';
-import 'package:lifeline/view/authentication/verify_phone_view.dart';
+import 'package:lifeline/view/bottomNavigation/custom_bottom_navigation.dart';
 
 void main() {
   runApp(const MyApp());
@@ -20,7 +19,7 @@ class MyApp extends StatelessWidget {
         ),
         useMaterial3: true,
       ),
-      home: const VerifyPhoneView(),
+      home: const CustomBottomNavigation(),
     );
   }
 }

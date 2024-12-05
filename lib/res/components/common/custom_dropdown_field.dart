@@ -1,23 +1,23 @@
 import 'package:flutter/material.dart';
 
-class CustomTextformfield extends StatelessWidget {
-  const CustomTextformfield({
+class CustomDropdownField extends StatelessWidget {
+  const CustomDropdownField({
     super.key,
-    this.controller,
-    required this.fieldText,
-    this.prefixText,
-    this.suffixIcon,
+    this.value,
+    this.items,
+    this.onChanged,
+    required this.dropdownName,
   });
-  final TextEditingController? controller;
-  final String fieldText;
-  final String? prefixText;
-  final Widget? suffixIcon;
+  final String? value;
+  final List<DropdownMenuItem<String>>? items;
+  final void Function(String?)? onChanged;
+  final String dropdownName;
 
   @override
   Widget build(BuildContext context) {
     final theme = Theme.of(context);
-    return TextFormField(
-      controller: controller,
+    return DropdownButtonFormField<String>(
+      value: value,
       decoration: InputDecoration(
         focusedBorder: OutlineInputBorder(
           borderRadius: BorderRadius.circular(15),
@@ -34,15 +34,15 @@ class CustomTextformfield extends StatelessWidget {
         border: OutlineInputBorder(
           borderRadius: BorderRadius.circular(15),
           borderSide: BorderSide(
-            color: theme.colorScheme.primary.withOpacity(.1),
+            color: theme.colorScheme.primary.withOpacity(.5),
           ),
         ),
         filled: true,
         fillColor: theme.colorScheme.primary.withOpacity(.1),
-        labelText: fieldText,
-        prefixText: prefixText,
-        suffixIcon: suffixIcon,
+        labelText: dropdownName,
       ),
+      items: items,
+      onChanged: onChanged,
     );
   }
 }
